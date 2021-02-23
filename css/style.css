@@ -58,6 +58,19 @@ a:hover {
   color: #fff;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  filter: grayscale(2) opacity(1) brightness(1.0);
+  border: solid 2px rgba(255, 255, 255, 0.5);  
+}
+a.disabled svg ellipse {
+  stroke: #000 !important;
+}
+a.disabled span {
+  display: none;
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -202,7 +215,7 @@ body .sqs-video-icon {
 }
 
 .btn-circle:hover {
-  background-color: #ff4c28;
+  background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
 }
 
@@ -297,6 +310,7 @@ body .sqs-video-icon {
   height: 40px;
   width: 40px;
 }
+
 .btn-goomer span svg {
   position: absolute;
   top: -15%;
@@ -453,20 +467,33 @@ body .sqs-video-icon {
   #myVideo {
     height: 200vh;
   }
+  .btn-circle {    
+    right: 19%;
+  }
 }
 @media only screen and (min-height: 567px) and (max-height: 667px) {
   #myVideo {
     height: 190vh;
   }
+  .btn-circle {    
+    right: 19%;
+  }
+  
 }
 @media only screen and (min-height: 668px) and (max-height: 736px) {
   #myVideo {
     height: 190vh;
   }
+  .btn-circle {    
+    right: 19%;
+  }
 }
 @media only screen and (min-height: 737px) and (max-height: 812px) {
   #myVideo {
     height: 186vh;
+  }
+  .btn-circle {    
+    right: 19%;
   }
 }
 
@@ -474,11 +501,17 @@ body .sqs-video-icon {
   #myVideo {
     height: 186vh;
   }
+  .btn-circle {    
+    right: 19%;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
   #myVideo {
     height: 210vh;
+  }
+  .btn-circle {    
+    right: 19%;
   }
 }
 
@@ -512,6 +545,7 @@ footer div{
   margin: 0 2%;
   font-size: .85rem;
 }
+
 footer div:nth-child(1), footer div:nth-child(3) {
   background-color: #000;
   opacity: 0.6;
@@ -570,6 +604,7 @@ footer span {
     width: 40px;
     height: 40px;
     font-size: 1rem;
+    right: 15%;
   }
 }
 
