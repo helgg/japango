@@ -245,7 +245,7 @@ body .sqs-video-icon {
 
 .modal .modal-body li .message {
   opacity: 0.6;
-  text-align: ;
+  
 }
 
 .modal .modal-body .date div span {
@@ -335,8 +335,7 @@ body .sqs-video-icon {
   stroke: #fff;
   stroke-width: 3;
   fill: #017179;
-  animation: dash 3s linear infinite;
-  animation-name: svg-border;
+  animation: svg-border 3s linear infinite;
   stroke-dasharray: 3;
   stroke-dashoffset: 0;
 }
@@ -381,8 +380,7 @@ body .sqs-video-icon {
   stroke: #ea1d2c;
   stroke-width: 3;
   fill: #fff;
-  animation: dash 5s linear infinite;
-  animation-name: svg-border;
+  animation: svg-border 5s linear infinite;  
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
 }
@@ -458,7 +456,7 @@ body .sqs-video-icon {
   animation-name: svg-border;
   /* animation-iteration-count: infinite;
   animation-direction: alternate; */
-  stroke-dasharray: 5;
+  stroke-dasharray: 10;
   stroke-dashoffset: 0;
 }
 
@@ -468,7 +466,7 @@ body .sqs-video-icon {
 
   to {
     /* stroke-dasharray: 0 0; */
-    stroke-dashoffset: -75;
+    stroke-dashoffset: -70;
   }
 }
 
