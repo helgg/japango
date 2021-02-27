@@ -64,6 +64,7 @@ a.disabled {
   filter: grayscale(2) opacity(1) brightness(1.0);
   border: solid 2px rgba(255, 255, 255, 0.3);  
 }
+
 a.disabled svg ellipse {
   stroke: #000 !important;
 }
@@ -225,6 +226,15 @@ body .sqs-video-icon {
   text-shadow: none;
   padding: 0;
   user-select: none;
+}
+.modal .modal-header {
+  color: #333 !important;
+  text-shadow: none;
+  user-select: none;
+}
+.modal .modal-header .pgto img{
+ width: 30px;
+ margin: 2px;
 }
 
 .modal .modal-body li:first-of-type .date div {
@@ -415,7 +425,7 @@ body .sqs-video-icon {
  * social
  */
 
-.social {
+.social , .btn-social {
   display: flex;
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
@@ -428,7 +438,7 @@ body .sqs-video-icon {
   align-items: center;
   transition: 0.2s;
 }
-.social:hover {
+.social:hover, .btn-social:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.15);
 }
@@ -459,6 +469,12 @@ body .sqs-video-icon {
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
 }
+
+
+
+
+
+
 
 @keyframes svg-border {
   /* from {
