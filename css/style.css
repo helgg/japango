@@ -233,7 +233,7 @@ body .sqs-video-icon {
   user-select: none;
 }
 .modal .modal-header .pgto img{
- width: 30px;
+ max-width: 30px;
  margin: 2px;
 }
 
