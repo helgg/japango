@@ -20,6 +20,8 @@
 
 @import url("https://use.typekit.net/alv7qek.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
 /*//////////////////////////////////////////////////////////////////
 [ VIDEO ]*/
 
@@ -300,6 +302,9 @@ filter: grayscale(0) opacity(.85);
   background-color: #fff;
 }
 
+
+
+
 .btn-ifood,
 .btn-goomer {
   min-width: 145px;
@@ -327,13 +332,22 @@ filter: grayscale(0) opacity(.85);
   position: relative;
   font-family: vinyl, sans-serif;
   text-shadow: #01575e 1px 1px 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover.btn-goomer {
   background-color: #0099a4;
   color: #fff;
 }
 
-.btn-goomer span {
+.btn-goomer span:first-child {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.btn-goomer .offer {
   position: absolute;
   top: -35%;
   right: -12.5%;
@@ -341,7 +355,7 @@ filter: grayscale(0) opacity(.85);
   width: 40px;
 }
 
-.btn-goomer span svg {
+.btn-goomer .offer svg {
   position: absolute;
   top: -15%;
   right: 5%;
@@ -352,7 +366,7 @@ filter: grayscale(0) opacity(.85);
   -o-transform: rotate(-20deg);
 }
 
-.btn-goomer span svg ellipse {
+.btn-goomer .offer svg ellipse {
   stroke: #fff;
   stroke-width: 3;
   fill: #017179;
@@ -361,7 +375,7 @@ filter: grayscale(0) opacity(.85);
   stroke-dashoffset: 0;
 }
 
-.btn-goomer span svg text {
+.btn-goomer .offer svg text {
   font-size: 0.96rem;
   animation: none;
   animation-name: none;
@@ -369,7 +383,7 @@ filter: grayscale(0) opacity(.85);
   text-shadow: #333 1px 1px !important;
   font-style: italic;
 }
-.btn-goomer span svg text.off {
+.btn-goomer .offer svg text.off {
   font-size: 0.8rem;
   font-style: italic;
 }
