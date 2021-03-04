@@ -229,6 +229,12 @@ body .sqs-video-icon {
   padding: 0;
   user-select: none;
 }
+
+.modal-content{
+  background-color: #f4f4f4;
+}
+
+
 .modal .modal-header, .modal .modal-subheader  {
   color: #333 !important;
   text-shadow: none;
@@ -306,7 +312,8 @@ filter: grayscale(0) opacity(.85);
 
 
 .btn-ifood,
-.btn-goomer {
+.btn-goomer,
+.btn-delivery {
   min-width: 145px;
   max-width: 145px;
   min-height: 56px;
@@ -340,12 +347,6 @@ filter: grayscale(0) opacity(.85);
   background-color: #0099a4;
   color: #fff;
 }
-
-.btn-goomer span:first-child {
-  font-size: 16px;
-  line-height: 20px;
-}
-
 
 .btn-goomer .offer {
   position: absolute;
@@ -384,6 +385,66 @@ filter: grayscale(0) opacity(.85);
   font-style: italic;
 }
 .btn-goomer .offer svg text.off {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.btn-delivery {
+  background-color: #ea1d2c;
+  color: #fff;
+  position: relative;
+  font-family: vinyl, sans-serif;
+  text-shadow: #9c1a00 1px 1px 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover.btn-delivery {
+  background-color: #ea1d2c;
+  color: #fff;
+}
+
+.btn-delivery .offer {
+  position: absolute;
+  bottom: -45%;
+  right: -10%;
+  height: 40px;
+  width: 40px;
+}
+
+
+.btn-delivery .offer svg {
+  --x:50px;
+  --y:20px;
+  position: absolute;
+  top: -15%;
+  right: 5%;
+  height: var(--y);
+  width: var(--x);
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  
+}
+
+.btn-delivery .offer svg rect {
+  stroke: #fff;
+  stroke-width: 0;
+  fill: #212529;
+  /* animation: svg-border 3s linear infinite;
+  stroke-dasharray: 2;
+  stroke-dashoffset: -150; */
+}
+
+.btn-delivery .offer svg text {
+  font-size: .7rem;
+  animation: none;
+  animation-name: none;
+  font-family: vinyl, sans-serif;
+  text-shadow:none;
+  font-style: italic;
+}
+.btn-delivery .offer svg text.off {
   font-size: 0.8rem;
   font-style: italic;
 }
