@@ -320,6 +320,12 @@ filter: grayscale(0) opacity(.85);
   max-height: 56px;
 }
 
+.btn-goomer span:first-child {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
 .btn-ifood {
   background-color: #ea1d2c;
   color: #fff;
