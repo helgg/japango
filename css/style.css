@@ -247,102 +247,6 @@ body .sqs-video-icon {
 }
 
 
-#offerModal .modal-content{
-  background-color: transparent !important;
-  margin: 0;
-  padding: 0;
-  border: none;
-  
-}
-
-.coupon {
-  border: 7px solid transparent;
-  width: 80%;
-  border-radius: 15px;
-  margin: 0 auto;
-  max-width: 386px;
-  background-color: #f1f1f1;
-  font-family: vinyl, sans-serif;
-  color: #333;
-  
-}
-.coupon-container {
-  position: relative;
-  padding: 2px 0px;
-  background-color: #f1f1f1;
-}
-
-/* .img-cover{
-  background-image: url(../images/combo8\ \(4\).jpg);
-  height: auto;  
-  background-size: 650px;
-  background-position: 50% 60%;
-  background-repeat: no-repeat;
-  opacity: .75;  
-  padding: 0;
-  margin: 0;
-  line-height: 40px;  
-  border: none;
-} */
-
-
-
-.cupom-offer{
-  background-color: #fff;
-  margin-bottom: 0px;
-  padding: 5px 0px;
-}
-.cupom-txt{
- text-align: justify;
- padding: 5px 15px;
- 
- 
-}
-
-.cupom-head, .cupom-txt, .cupom-offer, .cupom-code {
-  border-right: dashed 3px #333;
-  border-left: dashed 3px #333;
-}
-.cupom-head{
-  border-top: dashed 3px #333;
-  padding: 25px 0px;
-}
-.cupom-code{
-  border-bottom: dashed 3px #333;
-  padding: 25px 0px;
-}
-
-.cupom-code span.text-danger{
-  font-size: .9rem;
-  font-style: italic;
-}
-
-
-
-.coupon-container img {
-  width: 100px;
-  padding: 10px 5px;
-}
-.coupon-container p.text-coupon {  
-  padding: 10px 10px 0px 10px!important;
- 
-}
-.coupon-container button {
-  position: absolute;
-  top: 12px;
-  right: 17px;
-}
-
-
-.promo {
-  background: rgb(218, 218, 218);
-  padding: 3px;
-  user-select: text;
-  font-weight: bold;
-}
-
-
-
 .btn-circle-right {
   position: absolute;
   display: flex;
@@ -372,6 +276,125 @@ body .sqs-video-icon {
 .btn-circle-right:hover {
   background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
+}
+
+
+
+
+
+#offerModal .modal-header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#offerModal .modal-header button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 17px;
+}
+
+#offerModal .modal-body {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#offerModal .modal-body ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#offerModal .modal-body ul li {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#offerModal .modal-body li div:first-child div{
+  width: 75px;
+  height: 75px;
+  border-radius: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#offerModal .modal-body li .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-basis: 15%;
+  background-color: #333;
+  min-height: 75px;
+  flex-direction: column;
+  color: #fff;
+  line-height: 20px;
+}
+#offerModal .modal-body li .offer p:first-of-type {
+  font-size: 1.5rem;
+}
+#offerModal .modal-body li .offer p:last-of-type {
+  font-size: .9rem;
+}
+
+#offerModal .modal-body li .message {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-grow: 1;
+  
+}
+
+#offerModal .modal-body p{
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: .85rem;
+
+
+}
+#offerModal .modal-body li .message div p:first-of-type{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+
+
+
+#offerModal .modal-body li .cupom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;  
+  min-height: 75px;
+}
+
+#offerModal .modal-body li .cupom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  border: dashed 2px #000;
+  padding: 7.5px;
+  font-weight: bold;
+  user-select: all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#messageModal .modal-body{
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .modal .modal-title,
