@@ -303,6 +303,10 @@ body .sqs-video-icon {
   margin: 0 !important;
 }
 
+#offerModal .modal-body li:first-of-type {
+  border: solid 1px #dee2e6;
+  
+}
 #offerModal .modal-body li:first-child .offer {
   display: flex;
   justify-content: center;
@@ -388,10 +392,12 @@ body .sqs-video-icon {
   user-select: all;
 }
 
+
 #offerModal .modal-body li:not(:first-child) div:not(:last-child) {
   filter: blur(1.7px);
   position: relative;
 }
+
 #offerModal .modal-body li:not(:first-child) .expired {
   position: absolute;
   margin-left: auto;
@@ -400,7 +406,7 @@ body .sqs-video-icon {
   right: 0;
   text-align: center;
   align-self: center;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.616);
   color: #fff;
  
 }
