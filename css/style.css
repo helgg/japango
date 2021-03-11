@@ -581,7 +581,8 @@ body .sqs-video-icon {
 }
 
 .btn-goomer span:first-child {
-  font-size: 16px;
+  font-size: 1.25rem;
+  /* font-size: 16px; */
   line-height: 20px;
 }
 
@@ -729,6 +730,11 @@ body .sqs-video-icon {
   right: 0%;
   height: 50px;
   width: 50px;
+}
+.btn-ifood span svg text {
+  fill: #ea1d2c;
+  text-shadow: none;
+
 }
 
 .btn-ifood span svg path {
