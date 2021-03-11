@@ -54,12 +54,13 @@ body {
 
 .logo b span {
   animation: blink linear infinite 0.15s;
+  
 }
 .logo b span:nth-of-type(2) {
-  animation: blink linear infinite .5s;
+  animation: blink alternate infinite .75s;
 }
 .logo b span:nth-of-type(3) {
-  animation: blink linear infinite 10s;
+  animation: blink  infinite 10s;
 }
 
 @keyframes blink {
