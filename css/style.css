@@ -359,8 +359,7 @@ body .sqs-video-icon {
   font-size: 0.85rem;
   font-style: italic;
 }
-#offerModal .modal-body li .message div {
-}
+
 
 #offerModal .modal-body li .message div p:first-of-type {
   font-weight: bold;
@@ -511,8 +510,16 @@ body .sqs-video-icon {
   opacity: 0.6;
 }
 
-.modal .modal-body .date div span {
+.modal .modal-body .date div {
   font-weight: 600;
+  display: flex;
+  flex-direction: column;  
+}
+.modal .modal-body .date div * {
+ padding: 0 0; 
+ margin: 0 0;
+ line-height: 22px;
+ margin-top: -6px;
 }
 
 .modal .modal-body .date {
@@ -559,13 +566,15 @@ body .sqs-video-icon {
     height: 60px;
     max-width: 100%;
     min-width: 100%;
+    padding: 0 5px;
     
   }
+
   .modal .modal-body li .date div span {
     font-size: 1.25rem;
   }
   .modal .modal-body li .message {
-    padding: 5px 2px;
+    padding: 5px 5px 10px 5px;
     text-align: left;
     line-height: 22px;
   }
@@ -672,44 +681,42 @@ body .sqs-video-icon {
 
 .btn-delivery .offer {
   position: absolute;
-  bottom: -45%;
-  right: -10%;
+  bottom: -25%;
+  right: -15%;
   height: 40px;
   width: 40px;
 }
 
 .btn-delivery .offer svg {
-  --x: 50px;
-  --y: 20px;
   position: absolute;
   top: -15%;
   right: 5%;
-  height: var(--y);
-  width: var(--x);
+  height: 50px;
+  width: 50px;
   transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
 }
 
-.btn-delivery .offer svg rect {
+.btn-delivery .offer svg ellipse {
   stroke: #fff;
-  stroke-width: 0;
-  fill: #212529;
-  /* animation: svg-border 3s linear infinite;
-  stroke-dasharray: 2;
-  stroke-dashoffset: -150; */
+  stroke-width: 3;
+  fill: #923036;
+  animation: svg-border 3s linear infinite;
+  stroke-dasharray: 3;
+  stroke-dashoffset: 0;
 }
 
 .btn-delivery .offer svg text {
-  font-size: 0.7rem;
+  font-size: 0.96rem;
   animation: none;
   animation-name: none;
   font-family: vinyl, sans-serif;
-  text-shadow: none;
+  text-shadow: rgb(121, 9, 9) 1px 1px !important;
   font-style: italic;
 }
 .btn-delivery .offer svg text.off {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: italic;
 }
 
@@ -731,11 +738,7 @@ body .sqs-video-icon {
   height: 50px;
   width: 50px;
 }
-.btn-ifood span svg text {
-  fill: #ea1d2c;
-  text-shadow: none;
 
-}
 
 .btn-ifood span svg path {
   fill: #ea1d2c;
