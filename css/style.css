@@ -304,6 +304,7 @@ body .sqs-video-icon {
   display: flex;
   justify-content: start;
   align-items: stretch;
+  
 }
 
 #offerModal .modal-body li:first-of-type {
@@ -335,11 +336,23 @@ body .sqs-video-icon {
   line-height: 20px;
   min-width: 60px;
   opacity: 0.3;
+  font-family: vinyl, sans-serif;
 }
 
+
+
 #offerModal .modal-body li .offer span:first-of-type {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
+
+#offerModal .modal-body li .offer span:first-of-type::before {
+  content: "R$";
+  font-size: 0.7rem;
+  vertical-align: text-top;
+  margin-right: 1px;
+}
+
+
 #offerModal .modal-body li .offer span:last-of-type {
   font-size: 0.9rem;
   font-style: italic;
@@ -650,6 +663,14 @@ body .sqs-video-icon {
   stroke-dasharray: 3;
   stroke-dashoffset: 0;
 }
+.btn-goomer .offer svg ellipse {
+  stroke: #fff;
+  stroke-width: 3;
+  fill: #017179;
+  animation: svg-border 3s linear infinite;
+  stroke-dasharray: 3;
+  stroke-dashoffset: 0;
+}
 
 .btn-goomer .offer svg text {
   font-size: 0.96rem;
@@ -682,7 +703,7 @@ body .sqs-video-icon {
 .btn-delivery .offer {
   position: absolute;
   bottom: -25%;
-  right: -15%;
+  right: -25%;
   height: 40px;
   width: 40px;
 }
@@ -691,8 +712,8 @@ body .sqs-video-icon {
   position: absolute;
   top: -15%;
   right: 5%;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
@@ -708,7 +729,7 @@ body .sqs-video-icon {
 }
 
 .btn-delivery .offer svg text {
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   animation: none;
   animation-name: none;
   font-family: vinyl, sans-serif;
@@ -717,6 +738,10 @@ body .sqs-video-icon {
 }
 .btn-delivery .offer svg text.off {
   font-size: 0.7rem;
+  font-style: italic;
+}
+.btn-delivery .offer svg text.real {
+  font-size: 0.55rem;
   font-style: italic;
 }
 
