@@ -304,7 +304,6 @@ body .sqs-video-icon {
   display: flex;
   justify-content: start;
   align-items: stretch;
-  
 }
 
 #offerModal .modal-body li:first-of-type {
@@ -339,19 +338,16 @@ body .sqs-video-icon {
   font-family: vinyl, sans-serif;
 }
 
-
-
 #offerModal .modal-body li .offer span:first-of-type {
   font-size: 1.6rem;
 }
 
-#offerModal .modal-body li .offer span:first-of-type::before {
+/* #offerModal .modal-body li .offer span:first-of-type::before {
   content: "R$";
   font-size: 0.7rem;
   vertical-align: text-top;
   margin-right: 1px;
-}
-
+} */
 
 #offerModal .modal-body li .offer span:last-of-type {
   font-size: 0.9rem;
@@ -372,7 +368,6 @@ body .sqs-video-icon {
   font-size: 0.85rem;
   font-style: italic;
 }
-
 
 #offerModal .modal-body li .message div p:first-of-type {
   font-weight: bold;
@@ -490,11 +485,17 @@ body .sqs-video-icon {
 }
 .modal .modal-subheader .pgto-img {
   width: 25px;
-  margin-left: 0.25rem;
+  margin: 0 0.25rem;
+  transition: .3s;
+  
 }
 .modal .modal-subheader .pgto-img img {
   width: 100%;
   filter: grayscale(0) opacity(0.85);
+}
+.modal .modal-subheader .pgto-img:hover {
+  transform: scale(1.5);
+  margin: 0 10px;
 }
 
 .modal .modal-body li {
@@ -526,13 +527,13 @@ body .sqs-video-icon {
 .modal .modal-body .date div {
   font-weight: 600;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 .modal .modal-body .date div * {
- padding: 0 0; 
- margin: 0 0;
- line-height: 22px;
- margin-top: -6px;
+  padding: 0 0;
+  margin: 0 0;
+  line-height: 22px;
+  margin-top: -6px;
 }
 
 .modal .modal-body .date {
@@ -548,7 +549,8 @@ body .sqs-video-icon {
 
 .modal .modal-body .message {
   line-height: 1.1rem;
-  text-align: left;
+  text-align: justify;
+  line-height: 19px;
 }
 .modal .modal-body .message span:first-of-type {
   font-weight: 700;
@@ -580,7 +582,6 @@ body .sqs-video-icon {
     max-width: 100%;
     min-width: 100%;
     padding: 0 5px;
-    
   }
 
   .modal .modal-body li .date div span {
@@ -588,8 +589,15 @@ body .sqs-video-icon {
   }
   .modal .modal-body li .message {
     padding: 5px 5px 10px 5px;
-    text-align: left;
+    text-align: justify;
+    font-size: 15px;
     line-height: 22px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 }
 
@@ -703,7 +711,7 @@ body .sqs-video-icon {
 .btn-delivery .offer {
   position: absolute;
   bottom: -25%;
-  right: -25%;
+  right: -17.5%;
   height: 40px;
   width: 40px;
 }
@@ -712,8 +720,8 @@ body .sqs-video-icon {
   position: absolute;
   top: -15%;
   right: 5%;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
@@ -741,7 +749,7 @@ body .sqs-video-icon {
   font-style: italic;
 }
 .btn-delivery .offer svg text.real {
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   font-style: italic;
 }
 
@@ -763,7 +771,6 @@ body .sqs-video-icon {
   height: 50px;
   width: 50px;
 }
-
 
 .btn-ifood span svg path {
   fill: #ea1d2c;
