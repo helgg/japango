@@ -601,6 +601,11 @@ body .sqs-video-icon {
   }
 }
 
+a.no-events{
+  pointer-events: none;
+ 
+}
+
 .btn-ifood,
 .btn-goomer,
 .btn-delivery {
@@ -630,18 +635,25 @@ body .sqs-video-icon {
 }
 
 .btn-goomer {
-  background-color: #0099a4;
-  color: #fff;
+  /* background-color: #0099a4; */
+  background-color: rgb(194, 194, 194);
+  /* color: #fff; */
+  color: #353535;
   position: relative;
   font-family: vinyl, sans-serif;
-  text-shadow: #01575e 1px 1px 1px;
+  /* text-shadow: #01575e 1px 1px 1px; */
+  text-shadow: #464646 1px 1px 1px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border: solid 1px #616161;
+
+  
 }
 .btn:hover.btn-goomer {
   background-color: #0099a4;
   color: #fff;
+  
 }
 
 .btn-goomer .offer {
@@ -661,6 +673,7 @@ body .sqs-video-icon {
   transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
+  
 }
 
 .btn-goomer .offer svg ellipse {
@@ -670,14 +683,7 @@ body .sqs-video-icon {
   animation: svg-border 3s linear infinite;
   stroke-dasharray: 3;
   stroke-dashoffset: 0;
-}
-.btn-goomer .offer svg ellipse {
-  stroke: #fff;
-  stroke-width: 3;
-  fill: #017179;
-  animation: svg-border 3s linear infinite;
-  stroke-dasharray: 3;
-  stroke-dashoffset: 0;
+  
 }
 
 .btn-goomer .offer svg text {
@@ -688,10 +694,67 @@ body .sqs-video-icon {
   text-shadow: #333 1px 1px !important;
   font-style: italic;
 }
+
 .btn-goomer .offer svg text.off {
   font-size: 0.7rem;
   font-style: italic;
 }
+
+.btn-disabled {
+  background-color: #0099a4;
+  color: #fff;
+  position: relative;
+  font-family: vinyl, sans-serif;
+  text-shadow: #01575e 1px 1px 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-goomer .disabled {
+  position: absolute;
+  top: 15%;
+  right: -7.5%;
+  height: 40px;
+  width: 40px;
+}
+
+
+.btn-goomer .disabled svg {
+  position: absolute;
+  top: 27%;
+  right: 18%;
+  height: 14px;
+  width: 150px;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+
+.btn-goomer .disabled svg rect {
+  stroke: #000;
+  stroke-width: 4;
+  fill: #ffcc00;
+  stroke-dasharray: 5.5;
+  stroke-dashoffset: 0;
+}
+
+.btn-goomer .disabled svg text {
+  text-transform: uppercase;
+  font-size: 0.55rem;
+  font-weight: bolder;
+  animation: none;
+  animation-name: none;
+  fill: #000;
+  font-family: vinyl, sans-serif;
+  text-shadow: none;
+  margin: auto;
+  letter-spacing: 5.5px;
+
+}
+
+
 
 .btn-delivery {
   background-color: #ea1d2c;
@@ -791,6 +854,53 @@ body .sqs-video-icon {
   animation-name: none;
   font-family: Montserrat-Regular;
 }
+
+.emot-1{
+  position: absolute;
+  top:-22%;
+  left: -7%;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  font-size: 1.5rem;
+}
+.emot-2{
+  position: absolute;
+  top:-28%;
+  right: -7%;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  font-size: 1.5rem;
+}
+.emot-3{
+  position: absolute;
+  top:-30%;
+  left: 3%;
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  font-size: 1.7rem;
+}
+.emot-4{
+  position: absolute;
+  top:-25%;
+  right: -5%;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  font-size: 1.5rem;
+}
+.emot-5{
+  position: absolute;
+  bottom:-25%;
+  left: -10%;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  font-size: 1.5rem;
+}
+
 
 /*
  * Footer
