@@ -635,13 +635,13 @@ a.no-events{
 }
 
 .btn-goomer {
-  /* background-color: #0099a4; */
-  background-color: rgb(194, 194, 194);
-  /* color: #fff; */
-  color: #353535;
+  background-color: #0099a4;
+  /* background-color: rgb(194, 194, 194); */
+  color: #fff;
+  /* color: #353535; */
   position: relative;
   font-family: vinyl, sans-serif;
-  /* text-shadow: #01575e 1px 1px 1px; */
+  text-shadow: #01575e 1px 1px 1px;
   text-shadow: #464646 1px 1px 1px;
   display: inline-flex;
   justify-content: center;
@@ -866,20 +866,20 @@ a.no-events{
 }
 .emot-2{
   position: absolute;
-  top:-28%;
-  right: -7%;
-  transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
+  top:-25%;
+  left: -7%;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
   font-size: 1.5rem;
 }
 .emot-3{
   position: absolute;
-  top:-30%;
-  left: 3%;
-  transform: rotate(-35deg);
-  -webkit-transform: rotate(-35deg);
-  -o-transform: rotate(-35deg);
+  bottom:-35%;
+  left: -2%;
+  transform: rotate(-125deg);
+  -webkit-transform: rotate(-125deg);
+  -o-transform: rotate(-125deg);
   font-size: 1.7rem;
 }
 .emot-4{
