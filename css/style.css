@@ -339,7 +339,8 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li .offer span:first-of-type {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  margin-top: 5px;
 }
 
 /* #offerModal .modal-body li .offer span:first-of-type::before {
