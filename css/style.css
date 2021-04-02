@@ -340,7 +340,7 @@ body .sqs-video-icon {
 
 #offerModal .modal-body li .offer span:first-of-type {
   font-size: 1.4rem;
-  margin-top: 5px;
+  
 }
 
 /* #offerModal .modal-body li .offer span:first-of-type::before {
@@ -873,14 +873,15 @@ a.no-events{
   -webkit-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
   font-size: 1.5rem;
+  z-index: 10;
 }
 .emot-3{
   position: absolute;
   bottom:-35%;
   left: -2%;
-  transform: rotate(-125deg);
-  -webkit-transform: rotate(-125deg);
-  -o-transform: rotate(-125deg);
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
   font-size: 1.7rem;
 }
 .emot-4{
@@ -900,6 +901,20 @@ a.no-events{
   -webkit-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
   font-size: 1.5rem;
+}
+.placa{
+  position: absolute;
+  top:25%;
+  left: -11.5%;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  font-size: 0.70rem;  
+  background-color: #222;
+  padding: 2px 5px;
+  border-radius: 3px;
+  
+  text-transform: uppercase;
 }
 
 
