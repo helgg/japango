@@ -418,7 +418,7 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li.expired div:not(:nth-child(4n)) {
-  filter: blur(.7px);
+  /* filter: blur(.7px); */
 }
 
 #offerModal .modal-body li > .expired {
