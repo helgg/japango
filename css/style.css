@@ -418,8 +418,7 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li.expired div:not(:nth-child(4n)) {
- 
- 
+  filter: blur(.7px);
 }
 
 #offerModal .modal-body li > .expired {
@@ -447,27 +446,28 @@ body .sqs-video-icon {
   #offerModal .offer {
     min-width: 55px !important;
   }
-  #offerModal .offer span{
-    transform: scale(.9);
+  #offerModal .offer span {
+    transform: scale(0.9);
   }
-  #offerModal .message{
+  #offerModal .message {
     padding: 3px 3px !important;
     text-align: left;
   }
   #offerModal .cupom {
-    flex-basis: 25% !important;
+    flex-basis: 15% !important;
   }
-  #offerModal .cupom div{
+  #offerModal .cupom div {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
     font-size: 1rem !important;
-    padding: 7.5px 0px !important;
+    padding: 0px 0px !important;
   }
   #offerModal .modal-body li .message div p:first-of-type {
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #000;
     text-decoration: underline;
   }
-
 }
 
 .modal .modal-title,
