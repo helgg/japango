@@ -308,7 +308,7 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li:not(:last-of-type) {
-border-bottom: solid rgb(207, 207, 207) 1px;
+  border-bottom: solid rgb(207, 207, 207) 1px;
 }
 #offerModal .modal-body li .offer {
   display: flex;
@@ -321,7 +321,6 @@ border-bottom: solid rgb(207, 207, 207) 1px;
   color: #fff;
   line-height: 20px;
   min-width: 60px;
-
 }
 
 #offerModal .modal-body li.expired .offer {
@@ -341,6 +340,7 @@ border-bottom: solid rgb(207, 207, 207) 1px;
 
 #offerModal .modal-body li .offer span:first-of-type {
   font-size: 1.4rem;
+  font-style: italic;
 }
 
 #offerModal .modal-body li .offer span.real {
@@ -353,9 +353,9 @@ border-bottom: solid rgb(207, 207, 207) 1px;
   vertical-align: super;
   margin-right: 1%;
 }
-#offerModal .modal-body li .offer span.real::after {  
+#offerModal .modal-body li .offer span.real::after {
   content: ",00";
-  font-size: .8rem;
+  font-size: 0.8rem;
   top: 0px;
 }
 
@@ -387,7 +387,6 @@ border-bottom: solid rgb(207, 207, 207) 1px;
 #offerModal .modal-body li .message div p:first-of-type {
   font-weight: bold;
   font-size: 1rem;
- 
 }
 
 #offerModal .modal-body li .cupom {
@@ -419,8 +418,8 @@ border-bottom: solid rgb(207, 207, 207) 1px;
 }
 
 #offerModal .modal-body li.expired div:not(:nth-child(4n)) {
-  filter: blur(.75px);
-
+ 
+ 
 }
 
 #offerModal .modal-body li > .expired {
@@ -444,45 +443,32 @@ border-bottom: solid rgb(207, 207, 207) 1px;
   -o-transform: rotate(45deg);
 }
 
-
-/* @media only screen and (max-width: 812px) and (orientation: portrait) {
-  #offerModal .modal-body li {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 812px) and (orientation: portrait) {
+  #offerModal .offer {
+    min-width: 55px !important;
   }
-  #offerModal .modal-body li:first-child .offer {
-    flex-direction: row;
-    padding: 5%;
-    justify-content: center;
-    align-items: center;
+  #offerModal .offer span{
+    transform: scale(.9);
   }
-
-  #offerModal .modal-body li .offer span:first-of-type {
-    font-size: 1.8rem;
-    margin-left: 2%;
-    vertical-align: middle;
-  }
-  #offerModal .modal-body li .offer span:last-of-type {
-    font-size: 1.5rem;
-    margin-left: 2%;
-    font-style: normal;
-  }
-  #offerModal .modal-body li .message {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding: 5px 10px;
-  }
-  #offerModal .modal-body li .message div {
+  #offerModal .message{
+    padding: 3px 3px !important;
     text-align: left;
   }
-}
+  #offerModal .cupom {
+    flex-basis: 25% !important;
+  }
+  #offerModal .cupom div{
+    font-size: 1rem !important;
+    padding: 7.5px 0px !important;
+  }
+  #offerModal .modal-body li .message div p:first-of-type {
+    font-weight: bold;
+    font-size: .8rem;
+    color: #000;
+    text-decoration: underline;
+  }
 
-#messageModal .modal-body {
-  padding-bottom: 0;
-  margin-bottom: 0;
-} */
+}
 
 .modal .modal-title,
 .modal .modal-body {
@@ -588,42 +574,13 @@ border-bottom: solid rgb(207, 207, 207) 1px;
   background-color: #fff;
 }
 
-/* @media only screen and (max-width: 812px) and (orientation: portrait) {
-  .modal-body li {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 812px) and (orientation: portrait) {
+  .modal .modal-body .date {
+    max-width: 60px;
+    min-width: 60px;
+    justify-content: flex-start !important;
   }
-  .modal .modal-body li .date div {
-    width: 100%;
-    height: 100%;
-    border-radius: 0%;
-    background-color: #b6b6b6;
-    color: #fff;
-  }
-  .modal .modal-body li .date {
-    height: 60px;
-    max-width: 100%;
-    min-width: 100%;
-    padding: 0 5px;
-  }
-
-  .modal .modal-body li .date div span {
-    font-size: 1.25rem;
-  }
-  .modal .modal-body li .message {
-    padding: 5px 5px 10px 5px;
-    text-align: justify;
-    font-size: 15px;
-    line-height: 22px;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  }
-} */
+}
 
 a.no-events {
   pointer-events: none;
