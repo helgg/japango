@@ -356,12 +356,10 @@ body .sqs-video-icon {
 #offerModal .modal-body li .offer span.real::after {
   content: ",00";
   font-size: 0.7rem;
-  top: 0px;
 }
 #offerModal .modal-body li .offer span.percentual::after {
   content: "%";
   font-size: 0.9rem;
-  top: 0px;
 }
 
 #offerModal .modal-body li .offer span:last-of-type {
@@ -370,7 +368,7 @@ body .sqs-video-icon {
   padding: 0;
   margin: 0;
   line-height: 12px;
-  font-weight: ;
+
 }
 
 #offerModal .modal-body li .message {
@@ -420,10 +418,6 @@ body .sqs-video-icon {
 
 #offerModal .modal-body li {
   position: relative;
-}
-
-#offerModal .modal-body li.expired div:not(:nth-child(4n)) {
-  /* filter: blur(.7px); */
 }
 
 #offerModal .modal-body li > .expired {
