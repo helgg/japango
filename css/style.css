@@ -328,13 +328,13 @@ body .sqs-video-icon {
   justify-content: center;
   align-items: center;
   flex-basis: 15%;
-  background-color: #333;
+  background-color: #a1a1a1;
   height: auto;
   flex-direction: column;
   color: #fff;
   line-height: 20px;
   min-width: 60px;
-  opacity: 0.3;
+
   font-family: vinyl, sans-serif;
 }
 
@@ -351,11 +351,16 @@ body .sqs-video-icon {
   content: "R$";
   font-size: 0.6rem;
   vertical-align: super;
-  margin-right: 1%;
+  
 }
 #offerModal .modal-body li .offer span.real::after {
   content: ",00";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  top: 0px;
+}
+#offerModal .modal-body li .offer span.percentual::after {
+  content: "%";
+  font-size: 0.9rem;
   top: 0px;
 }
 
@@ -455,6 +460,7 @@ body .sqs-video-icon {
   }
   #offerModal .cupom {
     flex-basis: 15% !important;
+    padding: 2px 3px !important;
   }
   #offerModal .cupom div {
     writing-mode: vertical-rl !important;
@@ -463,9 +469,14 @@ body .sqs-video-icon {
     padding: 0px 0px !important;
     width: auto !important;
   }
+  #offerModal .modal-body li .message div p {
+    font-size: .9rem;
+    color: #000;   
+  }
+  
   #offerModal .modal-body li .message div p:first-of-type {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: .8rem;
     color: #000;
     text-decoration: underline;
   }
