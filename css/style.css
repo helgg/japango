@@ -447,20 +447,21 @@ body .sqs-video-icon {
     min-width: 55px !important;
   }
   #offerModal .offer span {
-    transform: scale(0.9);
+    transform: scale(0.9) !important;
   }
   #offerModal .message {
     padding: 3px 3px !important;
-    text-align: left;
+    text-align: left !important;
   }
   #offerModal .cupom {
     flex-basis: 15% !important;
   }
   #offerModal .cupom div {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    writing-mode: vertical-rl !important;
+    text-orientation: upright !important;
     font-size: 1rem !important;
     padding: 0px 0px !important;
+    width: auto !important;
   }
   #offerModal .modal-body li .message div p:first-of-type {
     font-weight: bold;
