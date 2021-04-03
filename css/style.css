@@ -565,6 +565,7 @@ body .sqs-video-icon {
 }
 .modal .modal-body .message span:first-of-type {
   font-weight: 700;
+  text-align: left;
 }
 
 .modal .modal-body li:nth-of-type(even) {
