@@ -536,8 +536,18 @@ body .sqs-video-icon {
   opacity: 1;
 }
 
-.modal .modal-body li .message {
+#messageModal .modal .modal-body li .message {
   opacity: 0.6;
+}
+#offerModal .modal-body li.expired .message {
+  opacity: 0.6;
+}
+
+#offerModal .modal-body li.expired div:nth-child(4n) {
+  display: block;
+}
+#offerModal .modal-body li div:nth-child(4n) {
+  display: none;
 }
 
 .modal .modal-body .date div {
