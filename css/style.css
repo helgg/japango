@@ -351,7 +351,6 @@ body .sqs-video-icon {
   content: "R$";
   font-size: 0.6rem;
   vertical-align: super;
-  
 }
 #offerModal .modal-body li .offer span.real::after {
   content: ",00";
@@ -368,7 +367,6 @@ body .sqs-video-icon {
   padding: 0;
   margin: 0;
   line-height: 12px;
-
 }
 
 #offerModal .modal-body li .message {
@@ -464,13 +462,13 @@ body .sqs-video-icon {
     width: auto !important;
   }
   #offerModal .modal-body li .message div p {
-    font-size: .9rem;
-    color: #000;   
+    font-size: 0.9rem;
+    color: #000;
   }
-  
+
   #offerModal .modal-body li .message div p:first-of-type {
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #000;
     text-decoration: underline;
   }
@@ -543,11 +541,11 @@ body .sqs-video-icon {
   opacity: 0.6;
 }
 
-#offerModal .modal-body li.expired div:nth-child(4n) {
-  display: block;
-}
 #offerModal .modal-body li div:nth-child(4n) {
   display: none;
+}
+#offerModal .modal-body li.expired div:nth-child(4n) {
+  display: block;
 }
 
 .modal .modal-body .date div {
@@ -860,6 +858,7 @@ a.no-events {
   -o-transform: rotate(-10deg);
   font-size: 1.5rem;
   z-index: 10;
+  transition: all ease 0.3s;
 }
 .emot-3 {
   position: absolute;
@@ -878,7 +877,9 @@ a.no-events {
   -webkit-transform: rotate(10deg);
   -o-transform: rotate(10deg);
   font-size: 1.5rem;
+  transition: all ease 0.3s;
 }
+
 .emot-5 {
   position: absolute;
   bottom: -25%;
@@ -899,8 +900,18 @@ a.no-events {
   background-color: #222;
   padding: 2px 5px;
   border-radius: 3px;
-
-  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+.btn-goomer:hover :is(.placa, .emot-2) {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+.btn-goomer:hover .emot-2 {
+  transform: scale(.9);
+}
+.btn-goomer:hover .placa {
+  transform: scale(1.4);
 }
 
 /*
