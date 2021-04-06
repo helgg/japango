@@ -70,7 +70,7 @@ a.disabled {
 a.disabled svg ellipse {
   stroke: #000 !important;
 }
-a.disabled span {
+a.disabled span:not(:first-child) {
   display: none;
 }
 
@@ -688,57 +688,6 @@ a.no-events {
 .btn-goomer .offer svg text.off {
   font-size: 0.7rem;
   font-style: italic;
-}
-
-.btn-disabled {
-  background-color: #0099a4;
-  color: #fff;
-  position: relative;
-  font-family: vinyl, sans-serif;
-  text-shadow: #01575e 1px 1px 1px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-goomer .disabled {
-  position: absolute;
-  top: 15%;
-  right: -7.5%;
-  height: 40px;
-  width: 40px;
-}
-
-.btn-goomer .disabled svg {
-  position: absolute;
-  top: 27%;
-  right: 18%;
-  height: 14px;
-  width: 150px;
-  transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-}
-
-.btn-goomer .disabled svg rect {
-  stroke: #000;
-  stroke-width: 4;
-  fill: #ffcc00;
-  stroke-dasharray: 5.5;
-  stroke-dashoffset: 0;
-}
-
-.btn-goomer .disabled svg text {
-  text-transform: uppercase;
-  font-size: 0.55rem;
-  font-weight: bolder;
-  animation: none;
-  animation-name: none;
-  fill: #000;
-  font-family: vinyl, sans-serif;
-  text-shadow: none;
-  margin: auto;
-  letter-spacing: 5.5px;
 }
 
 .btn-delivery {
