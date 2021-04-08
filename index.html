@@ -70,33 +70,33 @@
             </div>
 
             <ul class="modal-body">
-              <li class="d-flex justify-content-center align-items-center text-uppercase text-black-50 lead p-4">
+              <!-- <li class="d-flex justify-content-center align-items-center text-uppercase text-black-50 lead p-4">
                 SEM VOUCHERS HOJE
-              </li>
-              
-              <!-- <li class="d-flex justify-content-start align-items-stretch expired">
+              </li> -->
+
+              <li class="d-flex justify-content-start align-items-stretch">
                 <div class="offer">
-                  <span class="real">5</span>
+                  <span class="real">10</span>
                   <span>off</span>
                 </div>
                 <div class="message">
                   <div>
-                    <p>Cupom de R$5,00 de desconto</p>
+                    <p>Cupom de R$10,00 de desconto!</p>
                     <p>Apenas pedidos realizados online.</p>
-                    <p>Limite de 10 cupons disponíveis.</p>
-                    <p>Pedido mínimo de R$30,00</p>
-                    <p>Válido até 03/04.</p>
+                    <p>Limite de 50 cupons disponíveis.</p>
+                    <p>Pedido mínimo de R$40,00.</p>
+                    <p>Válido de 08/04 a 11/04.</p>
                   </div>
                 </div>
                 <div class="cupom">
                   <div>
-                    5UQ3H
+                    <a href="https://www.goomer.app/japango?cupom=QH1TR">QH1TR</a>
                   </div>
                 </div>   
                 <div class="expired">EXPIRADO</div>             
               </li>
 
-              <li class="d-flex justify-content-start align-items-stretch expired">
+              <!-- <li class="d-flex justify-content-start align-items-stretch expired">
                 <div class="offer">
                   <span class="percentual">15</span>
                   <span>off</span>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="expired">EXPIRADO</div>
               </li> -->
-              
+
             </ul>
 
             <div class="modal-subheader">
@@ -182,6 +182,25 @@
               <li class="">
                 <div class="date d-flex justify-content-center align-items-center">
                   <div class="d-flex justify-content-center align-items-center">
+                    <small>Qui</small>
+                    <span>08/04</span>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="pr-2">
+                    <span>Só vantagens! 😎</span><br>
+                    <span>
+
+                      Show, você já descobriu que fazer seu pedido por aqui é <em class="text-danger" style="font-weight: bold;">mais barato</em>! Lembre-se sempre de clicar no botão <i class='bx bxs-offer text-danger' style="font-size: 1.1rem"></i> para conferir os <em class="text-danger" style="font-weight: bold;">vouchers</em> disponíveis!
+
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="">
+                <div class="date d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-center align-items-center">
                     <small>Ter</small>
                     <span>06/04</span>
                   </div>
@@ -190,23 +209,13 @@
                   <div class="pr-2">
                     <span>Ta friozinho né!?🌧</span><br>
                     <span>
-                      
+
                       Aproveita que hoje tem promo de Hot em Dobro e mais opções quentes pra você conferir! 🍜
 
                     </span>
                   </div>
                 </div>
               </li>
-              
-             
-
-
-
-
-
-
-
-
 
             </ul>
             <div class="modal-subheader">
@@ -292,7 +301,8 @@
 
             <div class="col-12 col-lg-6">
               <p class="lead mb-2">
-                <a href="https://www.goomer.app/japango/menu" class="btn btn-lg btn-goomer" target="_blank">
+                <a id="drive_thru" href="https://www.goomer.app/japango/menu" class="btn btn-lg btn-goomer"
+                  target="_blank">
                   <span>DRIVE THRU</span>
 
                   <span class="emot-2">😷</span>
@@ -403,6 +413,8 @@
     <script type="text/javascript">
       $(window).on('load', function () {
         $('#messageModal').modal('show');
+        TimeOfDaySiteChange();
+        
       });
     </script>
   </body>
