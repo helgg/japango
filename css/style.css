@@ -337,30 +337,30 @@ body .sqs-video-icon {
   font-family: vinyl, sans-serif;
 }
 
-#offerModal .modal-body li .offer :is(span.real, span.percentual) {
+#offerModal .modal-body li .offer :is(div.real, div.percentual) {
   font-size: 1.8rem;
   font-style: italic;
   text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
 }
-#offerModal .modal-body li.expired .offer :is(span.real, span.percentual) {
+#offerModal .modal-body li.expired .offer :is(div.real, div.percentual) {
   text-shadow: none;
 }
 
-#offerModal .modal-body li .offer span.real::before {
+#offerModal .modal-body li .offer div.real::before {
   content: "R$";
   font-size: 0.6rem;
   vertical-align: super;
 }
-#offerModal .modal-body li .offer span.real::after {
+#offerModal .modal-body li .offer div.real::after {
   content: ",00";
   font-size: 0.7rem;
 }
-#offerModal .modal-body li .offer span.percentual::after {
+#offerModal .modal-body li .offer div.percentual::after {
   content: "%";
   font-size: 0.9rem;
 }
 
-#offerModal .modal-body li .offer span:last-of-type {
+#offerModal .modal-body li .offer div:last-of-type {
   font-size: 1.1rem;
   font-style: italic;
   padding: 0;
@@ -368,7 +368,7 @@ body .sqs-video-icon {
   line-height: 12px;
   text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
 }
-#offerModal .modal-body li.expired .offer span:last-of-type {
+#offerModal .modal-body li.expired .offer div:last-of-type {
   text-shadow: none;
 }
 
@@ -454,26 +454,29 @@ body .sqs-video-icon {
   #offerModal .offer {
     min-width: 12% !important;
     max-width: 12% !important;
+  }
+  #offerModal .offer div{
     writing-mode: sideways-lr !important;
     text-orientation: sideways-right !important;
   }
-  #offerModal .modal-body li .offer span.real::before {
+
+  #offerModal .modal-body li .offer div.real::before {
     content: "R$";
     font-size: 1rem;
     vertical-align: top;
   }
-  #offerModal .modal-body li .offer span.real::after {
+  #offerModal .modal-body li .offer div.real::after {
     content: ",00";
     font-size: 1rem;
   }
-  #offerModal .modal-body li .offer span.percentual::after {
+  #offerModal .modal-body li .offer div.percentual::after {
     content: "%";
     font-size: 1rem;
   }
-  #offerModal .offer span {
+  #offerModal .offer div {
     transform: scale(1) !important;
   }
-  #offerModal .offer span:last-of-type {
+  #offerModal .offer div:last-of-type {
     display: none !important;
   }
 
