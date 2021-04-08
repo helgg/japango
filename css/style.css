@@ -457,7 +457,6 @@ body .sqs-video-icon {
   }
   #offerModal .offer div{
     writing-mode: sideways-lr !important;
-    text-orientation: sideways-right !important;
   }
 
   #offerModal .modal-body li .offer div.real::before {
