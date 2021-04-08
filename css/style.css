@@ -70,9 +70,9 @@ a.disabled {
 a.disabled svg ellipse {
   stroke: #000 !important;
 }
-a.disabled span:not(:first-child) {
+/* a.disabled span:not(:first-child) {
   display: none;
-}
+} */
 
 /* Custom default button */
 .btn-secondary,
