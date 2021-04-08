@@ -454,11 +454,10 @@ body .sqs-video-icon {
   #offerModal .offer {
     min-width: 12% !important;
     max-width: 12% !important;
+    writing-mode: vertical-lr !important;
+    text-orientation: sideways-right !important;
+    transform: rotatez(180deg) !important;
   }
-  #offerModal .offer div{
-    writing-mode: sideways-lr !important;
-  }
-
   #offerModal .modal-body li .offer div.real::before {
     content: "R$";
     font-size: 1rem;
