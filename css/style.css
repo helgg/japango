@@ -457,6 +457,8 @@ body .sqs-video-icon {
     writing-mode: vertical-lr !important;
     text-orientation: sideways-right !important;
     transform: rotatez(180deg) !important;
+    -webkit-transform: rotatez(180deg) !important;
+    -o-transform: rotatez(180deg) !important;
   }
   #offerModal .modal-body li .offer div.real::before {
     content: "R$";
@@ -513,7 +515,7 @@ body .sqs-video-icon {
 
 @media only screen and (max-width: 355px) and (orientation: portrait) {
   #offerModal .message div p {
-    font-size: .9em !important;
+    font-size: 0.9em !important;
   }
 }
 
