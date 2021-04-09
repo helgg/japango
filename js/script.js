@@ -9,16 +9,16 @@ if (isInstagram) {
   head.appendChild(link);
 }
 
-
-function TimeOfDaySiteChange() {
-  let d = new Date();
-  let h = d.getHours();
-  if (h > 19 && h < 23) {
-    $('#drive_thru').addClass('disabled');
-  } else if (h < 20 && h > 23) {
-    $('#drive_thru').removeClass('disabled');
-  }
-}
+// Função para adicionar uma classe em determinada faixa horária.
+// function TimeOfDaySiteChange() {
+//   let d = new Date();
+//   let h = d.getHours();
+//   if (h > 19 && h < 23) {
+//     $('#drive_thru').addClass('disabled');
+//   } else if (h < 20 && h > 23) {
+//     $('#drive_thru').removeClass('disabled');
+//   }
+// }
 
 
 
