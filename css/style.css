@@ -451,10 +451,13 @@ body .sqs-video-icon {
 .circle-bd-1 {
   top: -2px;
   clip-path: circle(13px at top);
+  -webkit-clip-path: circle(13px at top);
+  
 }
 .circle-bd-2 {
   bottom: -2px;
   clip-path: circle(13px at bottom);
+  -webkit-clip-path: circle(13px at bottom);
 }
 
 .circle-bd-1-back,
@@ -468,10 +471,12 @@ body .sqs-video-icon {
 .circle-bd-1-back {
   top: -1px;
   clip-path: circle(14px at top);
+  -webkit-clip-path: circle(14px at top);
 }
 .circle-bd-2-back {
   bottom: -1px;
   clip-path: circle(14px at bottom);
+  -webkit-clip-path: circle(14px at bottom);
 }
 
 #offerModal .modal-body li.expired .cupom div a {
