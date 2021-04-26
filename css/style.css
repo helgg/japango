@@ -304,6 +304,7 @@ body .sqs-video-icon {
   align-items: stretch;
   border-top: solid 1px #a2a2a2;
   border-bottom: solid 1px #a2a2a2;
+  border-right: solid 1px #a2a2a2;
   transition: all ease 0.3s;
 }
 
@@ -313,7 +314,7 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li {
-  margin: 0.75rem 0 !important;
+  margin: 0.75rem  !important;
   background-color: #fff;
 }
 
@@ -408,8 +409,8 @@ body .sqs-video-icon {
   transition: all ease 0.5s;
 }
 
-#offerModal .modal-body li.expired .cupom {
-  opacity: 0.4;
+#offerModal .modal-body li.expired .cupom div a{
+  color: #858585
 }
 
 #offerModal .modal-body li .cupom div {
@@ -501,8 +502,8 @@ body .sqs-video-icon {
   border-top: dashed 2px #111;
   border-bottom: dashed 2px #000;
   line-height: 18px;
-  -webkit-clip-path: polygon(75% 0%, 100% 100%, 75% 100%, 0% 100%, 22% 0%);
-  clip-path: polygon(75% 0%, 100% 100%, 75% 100%, 0% 100%, 22% 0%);
+  /* -webkit-clip-path: polygon(75% 0%, 100% 100%, 75% 100%, 0% 100%, 20% 0%); */
+  clip-path: polygon(75% 0%, 97% 100%, 75% 100%, 0% 100%, 22% 0%);
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
