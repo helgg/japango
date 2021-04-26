@@ -302,11 +302,21 @@ body .sqs-video-icon {
   display: flex;
   justify-content: start;
   align-items: stretch;
+  border-top: solid 1px #a2a2a2;
+  border-bottom: solid 1px #a2a2a2;
+  transition: all ease 0.3s;
 }
 
-#offerModal .modal-body li:not(:last-of-type) {
-  border-bottom: solid rgb(207, 207, 207) 1px;
+#offerModal .modal-body li:hover .cupom {
+  background-color: #e6e6e6;
+  cursor: pointer;
 }
+
+#offerModal .modal-body li {
+  margin: 0.75rem 0 !important;
+  background-color: #fff;
+}
+
 #offerModal .modal-body li .offer {
   display: flex;
   justify-content: center;
@@ -318,6 +328,7 @@ body .sqs-video-icon {
   color: #fff;
   line-height: 20px;
   min-width: 60px;
+ 
 }
 
 #offerModal .modal-body li.expired .offer {
@@ -337,7 +348,6 @@ body .sqs-video-icon {
 #offerModal .modal-body li .offer :is(div.real, div.percentual) {
   font-size: 1.8rem;
   font-style: italic;
-  text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
 }
 #offerModal .modal-body li.expired .offer :is(div.real, div.percentual) {
   text-shadow: none;
@@ -363,7 +373,6 @@ body .sqs-video-icon {
   padding: 0;
   margin: 2px 0px;
   line-height: 12px;
-  text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
 }
 #offerModal .modal-body li.expired .offer div:last-of-type {
   text-shadow: none;
@@ -394,8 +403,9 @@ body .sqs-video-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 30%;
-  min-height: 75px;
+  flex-basis: 30%; 
+  border-left: dashed 3px #a2a2a2;
+  transition: all ease 0.5s;
 }
 
 #offerModal .modal-body li.expired .cupom {
@@ -405,20 +415,65 @@ body .sqs-video-icon {
 #offerModal .modal-body li .cupom div {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  width: 80%;
-  font-size: 1.3rem;
+  align-items: center;
+  font-size: 1.6rem;
   font-weight: bold;
   user-select: all;
   transition: all ease 0.2s;
+  height: 100%;
+  width: 100%;
+  
 }
 #offerModal .modal-body li .cupom div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #222;
+  /* text-shadow: 2px 2px 2px #444; */
+  vertical-align: middle;
   text-decoration: none;
-  border: dashed 2px #222;
   padding: 7.5px;
+  width: 100%;
   height: 100%;
+  position: relative !important;
+  /* background-color: #444; */
+  letter-spacing: 2px;
 }
+
+
+.circle-bd-1,
+.circle-bd-2 {
+  position: absolute;
+  left: -50.5%;
+  background-color: #f4f4f4;
+  z-index: 10 !important;
+}
+.circle-bd-1 {
+  top: -2px;
+  clip-path: circle(13px at top);
+}
+.circle-bd-2 {
+  bottom: -2px;
+  clip-path: circle(13px at bottom);
+}
+
+.circle-bd-1-back,
+.circle-bd-2-back {
+  left: -50.5%;
+  position: absolute;
+  background-color: #a2a2a2;
+  z-index: 9 !important;
+}
+
+.circle-bd-1-back {
+  top: -1px;
+  clip-path: circle(14px at top);
+}
+.circle-bd-2-back {
+  bottom: -1px;
+  clip-path: circle(14px at bottom);
+}
+
 #offerModal .modal-body li.expired .cupom div a {
   pointer-events: none;
 }
@@ -457,6 +512,7 @@ body .sqs-video-icon {
     transform: rotatez(180deg) !important;
     -webkit-transform: rotatez(180deg) !important;
     -o-transform: rotatez(180deg) !important;
+    border-right: none !important;
   }
   #offerModal .modal-body li .offer div.real::before {
     content: "R$";
@@ -486,18 +542,23 @@ body .sqs-video-icon {
   #offerModal .message div p {
     font-size: 1em !important;
   }
-
+  
   #offerModal .cupom {
-    flex-basis: 15% !important;
-    padding: 2px 3px !important;
+    flex-basis: 30% !important;
+    padding: 0 !important;
   }
   #offerModal .cupom div {
-    writing-mode: vertical-rl !important;
-    text-orientation: upright !important;
-    font-size: 1.25rem !important;
-    padding: 5px 0px !important;
-    width: 90% !important;
+    /* writing-mode: vertical-rl !important;
+    text-orientation: upright !important; */
+    font-size: 1.1rem !important;
+    min-height: 100%;
   }
+  #offerModal .cupom div a {
+    min-height: 100% !important;
+    padding: 0;
+  }
+
+
   #offerModal .modal-body li .message div p {
     font-size: 0.9rem;
     color: #000;
@@ -561,6 +622,14 @@ body .sqs-video-icon {
   align-items: center;
   padding: 0.4rem;
 }
+
+img.msg {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: 0% 56%;
+}
+
 .modal .modal-body li:first-of-type .date div {
   background-color: #ff4c28;
 }
@@ -587,10 +656,10 @@ body .sqs-video-icon {
   opacity: 0.6;
 }
 
-#offerModal .modal-body li div:nth-child(4n) {
+#offerModal .modal-body li > div:nth-child(4n) {
   display: none;
 }
-#offerModal .modal-body li.expired div:nth-child(4n) {
+#offerModal .modal-body li.expired > div:nth-child(4n) {
   display: block;
 }
 
