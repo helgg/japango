@@ -314,7 +314,7 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li {
-  margin: 0.75rem  !important;
+  margin: 0.75rem 0.20rem !important;
   background-color: #fff;
 }
 
@@ -557,7 +557,8 @@ body .sqs-video-icon {
     /* writing-mode: vertical-rl !important;
     text-orientation: upright !important; */
     font-size: 1.1rem !important;
-    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
   }
   #offerModal .cupom div a {
     min-height: 100% !important;
