@@ -302,15 +302,29 @@ body .sqs-video-icon {
   display: flex;
   justify-content: start;
   align-items: stretch;
-  border-top: solid 1px #a2a2a2;
-  border-bottom: solid 1px #a2a2a2;
-  border-right: solid 1px #a2a2a2;
+  border: solid 1px #222;
   transition: all ease 0.3s;
+}
+#offerModal .modal-body li.expired {
+  border: solid 1px #a2a2a2;
+}
+#offerModal .modal-body li.expired .cupom div a::before {
+  border-color: #a2a2a2;
 }
 
 #offerModal .modal-body li:hover .cupom {
-  background-color: #e6e6e6;
+  background-color: #222;  
   cursor: pointer;
+}
+#offerModal .modal-body li:hover .cupom a{
+  color: #fff;
+}
+#offerModal .modal-body li.expired:hover .cupom {
+  background-color: #fff;  
+  cursor: pointer;
+}
+#offerModal .modal-body li.expired:hover .cupom a{
+  color: rgb(196, 80, 80);
 }
 
 #offerModal .modal-body li {
@@ -405,8 +419,15 @@ body .sqs-video-icon {
   justify-content: center;
   align-items: center;
   flex-basis: 30%; 
-  border-left: dashed 3px #a2a2a2;
+  background-color: #fff;
   transition: all ease 0.5s;
+}
+#offerModal .modal-body li .cupom a::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: -4px;
+  border-left: dashed 3px #222;
 }
 
 #offerModal .modal-body li.expired .cupom div a{
@@ -417,7 +438,7 @@ body .sqs-video-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: bold;
   user-select: all;
   transition: all ease 0.2s;

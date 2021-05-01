@@ -10,6 +10,30 @@ body {
   margin: 0;
 }
 
+.box-logo-neon{
+  margin: auto;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.box-buttons-neon{
+  margin: auto;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 5rem;
+  gap: 0rem
+}
+
+.box-buttons-neon > *{
+  flex: 1 1;
+  transform: scale(.8);
+}
+
 
 
 
@@ -89,16 +113,24 @@ body {
 
 
 
-
-
-.drive {
-
-  width: 300px;
-  height: 100px;
-  margin: -50px 0 0 -150px;
-  text-align: center;
-  border-radius: 8px;
+.take{
   border: 3px solid rgb(0, 40, 70);
+}
+
+.delivery{
+  border: 3px solid rgb(0, 40, 70);
+}
+
+.take h1{
+  color: rgba(120, 0, 50, .5);
+}
+.delivery h1{
+  color: rgba(120, 0, 50, .5);
+}
+
+.drive {   
+  text-align: center;
+  border-radius: 8px;  
   cursor: pointer;
 }
 
@@ -107,12 +139,10 @@ body {
 }
 
 .drive h1 {
-  /* font-family: "Open Sans"; */
   font: 400 8vh "Vibur";
   font-weight: 300;
   font-size:2.9em;
   margin: 15px 0 0;
-  color: rgba(120, 0, 50, .5);
 }
 
 .drive:hover h1 {
