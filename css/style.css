@@ -298,13 +298,19 @@ body .sqs-video-icon {
 }
 #offerModal .modal-body li {
   padding: 0 !important;
-  margin: 0 !important;
   display: flex;
   justify-content: start;
   align-items: stretch;
-  border: solid 1px #222;
+  margin: 0rem 0rem !important;
+  background-color: #fff;
   transition: all ease 0.3s;
 }
+#offerModal .modal-body li.no-voucher {
+  font-size: 1rem;
+  padding: 1rem !important;
+  font-style: italic;
+}
+
 #offerModal .modal-body li.expired {
   border: solid 1px #a2a2a2;
 }
@@ -327,10 +333,6 @@ body .sqs-video-icon {
   color: rgb(196, 80, 80);
 }
 
-#offerModal .modal-body li {
-  margin: 0.75rem 0.20rem !important;
-  background-color: #fff;
-}
 
 #offerModal .modal-body li .offer {
   display: flex;
@@ -680,6 +682,15 @@ img.msg {
 #messageModal .modal .modal-body li .message {
   opacity: 0.6;
 }
+#messageModal kbd{
+  padding: 0 2px;
+  font-weight: bold;
+}
+#messageModal em{
+  font-weight: bold;
+  color: #dc3545;
+}
+
 #offerModal .modal-body li.expired .message {
   opacity: 0.6;
 }
