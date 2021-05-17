@@ -904,6 +904,76 @@ a.no-events {
   font-style: italic;
 }
 
+.btn-pedir {
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 56px;
+  max-height: 56px;
+}
+
+.btn-pedir {
+  background-color: #ea1d2c;
+  color: #fff;
+  position: relative;
+  line-height: 22px;
+  font-size: 1.20rem;
+  font-family: vinyl, sans-serif;
+  text-shadow: #803c2f 1px 1px 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover.btn-pedir {
+  background-color: #ea1d2c;
+  color: #fff;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.btn-pedir .offer {
+  position: absolute;
+  bottom: -25%;
+  right: -17.5%;
+  height: 40px;
+  width: 40px;
+}
+
+.btn-pedir .offer svg {
+  position: absolute;
+  top: -15%;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.btn-pedir .offer svg ellipse {
+  stroke: #fff;
+  stroke-width: 3;
+  fill: #923036;
+  animation: svg-border 3s linear infinite;
+  stroke-dasharray: 3;
+  stroke-dashoffset: 0;
+}
+
+.btn-pedir .offer svg text {
+  font-size: 0.95rem;
+  animation: none;
+  animation-name: none;
+  font-family: vinyl, sans-serif;
+  text-shadow: rgb(121, 9, 9) 1px 1px !important;
+  font-style: italic;
+}
+.btn-pedir .offer svg text.off {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+.btn-pedir .offer svg text.real {
+  font-size: 0.6rem;
+  font-style: italic;
+}
+
 .btn-ifood span {
   position: absolute;
   display: flex;
@@ -945,11 +1015,11 @@ a.no-events {
 
 .emot-1 {
   position: absolute;
-  top: -22%;
-  left: -7%;
-  transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
+  bottom: -22%;
+  left: -5%;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
   font-size: 1.5rem;
 }
 .emot-2 {
