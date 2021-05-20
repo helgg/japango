@@ -274,6 +274,175 @@ body .sqs-video-icon {
   color: #fff;
 }
 
+/* .modal-dialog{
+  max-width: min-content;
+} */
+
+.modal-body{
+  background-color: #f4f4f4;
+}
+
+
+.voucher-group {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.5rem;
+  gap: 7px;
+}
+.voucher-group > * {
+  flex: 0 1;
+  min-width: 115px;
+}
+.voucher {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #b5b7b9;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* .voucher:not(:last-child) {
+  border-right: none;
+} */
+
+.voucher-head {
+  border-bottom: 1px dashed #b5b7b9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+}
+.voucher-head::before,
+.voucher-head::after {
+  background: #fff;
+  border: 1px solid #b5b7b9;
+  border-bottom-color: rgb(181, 183, 185);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  content: "";
+  display: block;
+  height: 6px;
+  position: absolute;
+  width: 12px;
+  z-index: 1;
+}
+.voucher-head::before {
+  left: -4px;
+  bottom: -3px;
+  transform: rotate(90deg);
+}
+.voucher-head::after {
+  right: -4px;
+  bottom: -3px;
+  transform: rotate(-90deg);
+}
+
+.voucher-head img {
+  max-height: 40px;
+  max-width: 50px;
+}
+
+.voucher-body {
+  padding: 8px;  
+  margin-bottom: auto !important;
+}
+.voucher-body p {
+  -webkit-box-orient: vertical;
+  color: #636f7a;
+  display: -webkit-box;
+  font-size: 14px;
+  font-style: normal !important;
+  height: 80px;
+  -webkit-line-clamp: 4;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.voucher-body ul {
+ list-style: circle;
+}
+.voucher-body ul li {
+  -webkit-box-orient: vertical;
+  color: #636f7a;
+  display: -webkit-box;
+  font-size: 14px;
+  font-style: normal !important;
+  height: 80px;
+  -webkit-line-clamp: 4;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.voucher-footer {
+  padding: 0px 0px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.voucher-footer input{
+ 
+}
+
+.voucher-footer a {
+  background-color: rgb(255, 36, 1);
+  border: 1px solid rgb(255, 36, 1);
+  border-radius: 8px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  width: 80%;
+  height: 40px;
+  line-height: 30px;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.voucher-footer a:hover {
+  background: rgb(255, 36, 1);
+  border-style: solid;
+  color: #fff;
+}
+.voucher-footer a:active {
+  background: #fff;
+  border: 1px dashed rgb(255, 36, 1);
+  color: rgb(255, 36, 1);
+}
+
+.voucher-footer a:hover::after {
+  background: linear-gradient(to bottom left, #fff 50%, rgba(0, 0, 0, 0.2) 0);
+  background-origin: padding-box;
+  background-origin: border-box;
+  border-bottom-left-radius: 6px;
+  border-right: 1px dashed rgb(255, 36, 1);
+  border-top: 1px dashed rgb(255, 36, 1);
+  border-top-right-radius: 6px;
+  content: "";
+  display: block;
+  height: 12px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 12px;
+}
+.voucher-footer a:active::after {
+  display: none;
+}
+
+
+
 #offerModal .modal-header {
   position: relative;
   display: flex;
@@ -319,20 +488,19 @@ body .sqs-video-icon {
 }
 
 #offerModal .modal-body li:hover .cupom {
-  background-color: #222;  
+  background-color: #222;
   cursor: pointer;
 }
-#offerModal .modal-body li:hover .cupom a{
+#offerModal .modal-body li:hover .cupom a {
   color: #fff;
 }
 #offerModal .modal-body li.expired:hover .cupom {
-  background-color: #fff;  
+  background-color: #fff;
   cursor: pointer;
 }
-#offerModal .modal-body li.expired:hover .cupom a{
+#offerModal .modal-body li.expired:hover .cupom a {
   color: rgb(196, 80, 80);
 }
-
 
 #offerModal .modal-body li .offer {
   display: flex;
@@ -345,7 +513,6 @@ body .sqs-video-icon {
   color: #fff;
   line-height: 20px;
   min-width: 60px;
- 
 }
 
 #offerModal .modal-body li.expired .offer {
@@ -420,7 +587,7 @@ body .sqs-video-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 30%; 
+  flex-basis: 30%;
   background-color: #fff;
   transition: all ease 0.5s;
 }
@@ -432,8 +599,8 @@ body .sqs-video-icon {
   border-left: dashed 3px #222;
 }
 
-#offerModal .modal-body li.expired .cupom div a{
-  color: #858585
+#offerModal .modal-body li.expired .cupom div a {
+  color: #858585;
 }
 
 #offerModal .modal-body li .cupom div {
@@ -446,7 +613,6 @@ body .sqs-video-icon {
   transition: all ease 0.2s;
   height: 100%;
   width: 100%;
-  
 }
 #offerModal .modal-body li .cupom div a {
   display: flex;
@@ -464,7 +630,6 @@ body .sqs-video-icon {
   letter-spacing: 2px;
 }
 
-
 .circle-bd-1,
 .circle-bd-2 {
   position: absolute;
@@ -476,7 +641,6 @@ body .sqs-video-icon {
   top: -2px;
   clip-path: circle(13px at top);
   -webkit-clip-path: circle(13px at top);
-  
 }
 .circle-bd-2 {
   bottom: -2px;
@@ -571,7 +735,7 @@ body .sqs-video-icon {
   #offerModal .message div p {
     font-size: 1em !important;
   }
-  
+
   #offerModal .cupom {
     flex-basis: 30% !important;
     padding: 0 !important;
@@ -587,7 +751,6 @@ body .sqs-video-icon {
     min-height: 100% !important;
     padding: 0;
   }
-
 
   #offerModal .modal-body li .message div p {
     font-size: 0.9rem;
@@ -641,10 +804,6 @@ body .sqs-video-icon {
   width: 100%;
   filter: grayscale(0) opacity(0.85);
 }
-.modal .modal-subheader .pgto-img:hover {
-  transform: scale(1.5);
-  margin: 0 10px;
-}
 
 .modal .modal-body li {
   display: flex;
@@ -682,11 +841,11 @@ img.msg {
 #messageModal .modal .modal-body li .message {
   opacity: 0.6;
 }
-#messageModal kbd{
+#messageModal kbd {
   padding: 0 2px;
   font-weight: bold;
 }
-#messageModal em{
+#messageModal em {
   font-weight: bold;
   color: #dc3545;
 }
@@ -916,7 +1075,7 @@ a.no-events {
   color: #fff;
   position: relative;
   line-height: 22px;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   font-family: vinyl, sans-serif;
   text-shadow: #803c2f 1px 1px 1px;
   display: inline-flex;
