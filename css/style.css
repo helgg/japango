@@ -367,8 +367,8 @@ body .sqs-video-icon {
   overflow: hidden;
 }
 
-.voucher-body ul {
- list-style: circle;
+.modal-body .voucher-group .voucher .voucher-body ul {
+  list-style-type: disc !important;
 }
 .voucher-body ul li {
   -webkit-box-orient: vertical;
@@ -389,9 +389,7 @@ body .sqs-video-icon {
   justify-content: center;
   
 }
-.voucher-footer input{
- 
-}
+
 
 .voucher-footer a {
   background-color: rgb(255, 36, 1);
@@ -408,13 +406,14 @@ body .sqs-video-icon {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: all ease 0.3s;
 }
 .voucher-footer a:hover {
   background: rgb(255, 36, 1);
   border-style: solid;
   color: #fff;
 }
+
 .voucher-footer a:active {
   background: #fff;
   border: 1px dashed rgb(255, 36, 1);
@@ -436,6 +435,7 @@ body .sqs-video-icon {
   right: -1px;
   top: -1px;
   width: 12px;
+  
 }
 .voucher-footer a:active::after {
   display: none;
