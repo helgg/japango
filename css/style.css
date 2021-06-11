@@ -1234,6 +1234,7 @@ a.no-events {
 @media only screen and (min-height: 1px) and (max-height: 667px) {
   .cover-heading {
     font-size: 3.75rem;
+    line-height: 50px;;
   }
 }
 
