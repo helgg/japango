@@ -1217,11 +1217,11 @@ a.no-events {
 }
 
 .cover-heading {
-  /* font-family: Playlist Script; */
-  font-family: hello-my-love-pro, sans-serif;
+  font-family: Playlist Script;
+  /* font-family: hello-my-love-pro, sans-serif; */
   font-weight: 400;
   font-style: normal;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   user-select: none;
 }
 
