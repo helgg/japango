@@ -283,7 +283,7 @@ body .sqs-video-icon {
 
 .voucher-group {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: stretch;
   flex-wrap: wrap;
   width: 100%;
@@ -297,7 +297,7 @@ body .sqs-video-icon {
 .voucher {
   display: flex;
   flex-direction: column;
-  border: solid 1px #b5b7b9;
+  border: solid 1px #9b9b9b;
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
 }
@@ -307,7 +307,9 @@ body .sqs-video-icon {
 } */
 
 .voucher-head {
-  border-bottom: 1px dashed #b5b7b9;
+  border-radius: 6px;
+  /* background-color: rgb(255, 30, 48); */
+  border-bottom: 1px dashed #9b9b9b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,12 +371,11 @@ body .sqs-video-icon {
   align-items: center;
   justify-content: center;
 }
-
 .voucher-footer a {
-  background-color: rgb(255, 36, 1);
-  border: 1px solid rgb(255, 36, 1);
+  background-color: #b9b9b9;
+  border: 1px solid #949494;
   border-radius: 8px;
-  color: #fff;
+  color: #444;
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -385,18 +386,25 @@ body .sqs-video-icon {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all ease 0.3s;
+  transition: all ease 0.1s;
 }
+.voucher-footer a {
+  background: #ffcc00;
+  border: 1px solid #dbaf00;
+  color: #333;
+}
+
 .voucher-footer a:hover {
-  background: rgb(255, 36, 1);
+  background: #ffcc00;
   border-style: solid;
-  color: #fff;
+  border-color: #dbaf00;
+  color: #222;
 }
 
 .voucher-footer a:active {
   background: #fff;
-  border: 1px dashed rgb(255, 36, 1);
-  color: rgb(255, 36, 1);
+  border: 1px dashed #333;
+  color: #333;
 }
 
 .voucher-footer a:hover::after {
@@ -404,8 +412,8 @@ body .sqs-video-icon {
   background-origin: padding-box;
   background-origin: border-box;
   border-bottom-left-radius: 6px;
-  border-right: 1px dashed rgb(255, 36, 1);
-  border-top: 1px dashed rgb(255, 36, 1);
+  border-right: 1px dashed #333;
+  border-top: 1px dashed #333;
   border-top-right-radius: 6px;
   content: "";
   display: block;
@@ -415,9 +423,9 @@ body .sqs-video-icon {
   top: -1px;
   width: 12px;
 }
-.voucher-footer a:active::after {
+/* .voucher-footer a:active::after {
   display: none;
-}
+} */
 
 #offerModal .modal-header {
   position: relative;
@@ -442,7 +450,6 @@ body .sqs-video-icon {
   margin: 0 !important;
 }
 #offerModal .modal-body li {
-  padding: 0 !important;
   display: flex;
   justify-content: start;
   align-items: stretch;
