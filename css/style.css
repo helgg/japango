@@ -1060,7 +1060,7 @@ a.no-events {
 .btn-pedir .offer {
   position: absolute;
   bottom: -25%;
-  right: -17.5%;
+  right: -12.5%;
   height: 40px;
   width: 40px;
 }
@@ -1074,6 +1074,7 @@ a.no-events {
   transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
+
 }
 
 .btn-pedir .offer svg ellipse {
@@ -1086,20 +1087,26 @@ a.no-events {
 }
 
 .btn-pedir .offer svg text {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   animation: none;
   animation-name: none;
   font-family: vinyl, sans-serif;
   text-shadow: rgb(121, 9, 9) 1px 1px !important;
   font-style: italic;
+  letter-spacing: 1px;
+
 }
 .btn-pedir .offer svg text.off {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-style: italic;
+  letter-spacing: 1px;
+
 }
 .btn-pedir .offer svg text.real {
   font-size: 0.6rem;
   font-style: italic;
+  letter-spacing: 1px;
+
 }
 
 .btn-ifood span {
