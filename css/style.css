@@ -1093,7 +1093,7 @@ a.no-events {
   font-family: vinyl, sans-serif;
   text-shadow: rgb(121, 9, 9) 1px 1px !important;
   font-style: italic;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 
 }
 .btn-pedir .offer svg text.off {
