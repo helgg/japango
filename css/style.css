@@ -1,5 +1,11 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
 @import url("https://use.typekit.net/alv7qek.css");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
@@ -1051,6 +1057,69 @@ a.no-events {
   justify-content: center;
   align-items: center;
 }
+
+.logo b {
+  font: 400 8vh;
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+    0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+.logo b span {
+  animation: blink linear infinite 0.15s;
+  
+}
+.logo b span:nth-of-type(2) {
+  animation: blink alternate infinite .75s;
+}
+.logo b span:nth-of-type(3) {
+  animation: blink  infinite 10s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+    box-shadow: inherit;
+    border-color: inherit;
+  }
+  79% {
+    color: #333;
+    border-color: #333;
+  }
+  80% {
+    box-shadow: none;
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    border-color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    border-color: #333;
+    text-shadow: none;
+    box-shadow: none;
+  }
+  93% {
+    box-shadow: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    border-color: #333;
+    text-shadow: none;
+    box-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    border-color: inherit;
+    text-shadow: inherit;
+    box-shadow: inherit;
+  }
+}
+
 .btn:hover.btn-pedir {
   background-color: #ea1d2c;
   color: #fff;
@@ -1179,7 +1248,7 @@ a.no-events {
 }
 .emot-4 {
   position: absolute;
-  top: -25%;
+  top: -18%;
   right: -5%;
   transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
@@ -1187,11 +1256,21 @@ a.no-events {
   font-size: 1.5rem;
   transition: all ease 0.3s;
 }
+.emot-45 {
+  position: absolute;
+  top: -22%;
+  right: 2.5%;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  font-size: 1.5rem;
+  transition: all ease 0.3s;
+}
 
 .emot-5 {
   position: absolute;
-  bottom: -25%;
-  left: -10%;
+  bottom: -15%;
+  left: -5%;
   transform: rotate(-10deg);
   -webkit-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
