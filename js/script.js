@@ -14,7 +14,7 @@ if (isInstagram) {
 //   let d = new Date();
 //   let h = d.getHours();
 //   if (h > 19 && h < 23) {
-//     $('#drive_thru').addClass('disabled');
+//     $('#drive_thru').addClass('');
 //   } else if (h < 20 && h > 23) {
 //     $('#drive_thru').removeClass('disabled');
 //   }
